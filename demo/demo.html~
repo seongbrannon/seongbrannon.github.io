@@ -32,7 +32,7 @@
         </style>
     </head>
     <body>
-        <div id="gallery"></div>
+        <div id="ex1"></div>
         <footer>
             Galereya
         </footer>
@@ -41,18 +41,10 @@
         <script>window.jQuery || document.write('<script src="js/jquery-1.9.1.min.js"><\/script>')</script>
         <script src="../src/js/jquery.galereya.js"></script>
         <script>
-            $(function() {
-                $('#gallery').galereya({
-                    load: function(next) {
-                        $.getJSON('images.json', function(data) {
-                            next(data);
-                        });
-                    }
-                });
-            });
+  
 
 
-$('#gallery').galereya({
+$('#ex1').galereya({
     wave: false,
     modifier: 'ex1',
     spacing: 5,
