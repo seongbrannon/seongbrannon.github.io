@@ -39,6 +39,7 @@
 
     $(function() {
                 $('#gallery').galereya({
+ 		    wave: false,
                     load: function(next) {
                         $.getJSON('images.json', function(data) {
                             next(data);
