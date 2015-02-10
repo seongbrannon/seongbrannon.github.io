@@ -26,7 +26,7 @@
         </style>
     </head>
     <body>
-        <div id="ex1"></div>
+        <div id="gallery"></div>
         <footer>
             Galereya
         </footer>
@@ -37,18 +37,15 @@
         <script>
   
 
-
-$('#ex1').galereya({
-    wave: false,
-    modifier: 'ex1',
-    spacing: 5,
-    disableSliderOnClick: true,
-    load: function(next) {
-        $.getJSON('images.json', function(data) {
-            next(data);
-        });
-    }
-});
+    $(function() {
+                $('#gallery').galereya({
+                    load: function(next) {
+                        $.getJSON('images.json', function(data) {
+                            next(data);
+                        });
+                    }
+                });
+            });
         </script>
     </body>
 </html>
