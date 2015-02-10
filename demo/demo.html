@@ -28,7 +28,7 @@
     <body>
         <div id="gallery"></div>
         <footer>
-            Galereya
+Ashley Seong
         </footer>
 
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -40,7 +40,6 @@
     $(function() {
                 $('#gallery').galereya({
  		    wave: false,
-                    disableSliderOnClick: true,
                     load: function(next) {
                         $.getJSON('images.json', function(data) {
                             next(data);
